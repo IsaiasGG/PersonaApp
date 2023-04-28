@@ -63,5 +63,10 @@ namespace PersonaApp
 
             return personas;
         }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            CargarPersonas();
+        }
     }
 }

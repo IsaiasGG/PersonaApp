@@ -30,6 +30,7 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnRefrescar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,11 +55,23 @@
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "LISTA DE PERSONAS";
             // 
+            // btnRefrescar
+            // 
+            this.btnRefrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.Location = new System.Drawing.Point(264, 17);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(97, 34);
+            this.btnRefrescar.TabIndex = 2;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
+            // 
             // FrmPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 361);
+            this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmPersona";
@@ -73,6 +86,7 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Button btnRefrescar;
     }
 }
 
